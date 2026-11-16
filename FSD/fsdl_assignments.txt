@@ -1,0 +1,32 @@
+Assignment 1:
+Develop a Shopping Bill Calculator using JavaScript with a simple HTML interface. Accept the prices of four products, calculate the total bill, and apply a 15% discount if the total exceeds 3000. Display the total amount, discount, and final payable amount using template literals. Use let for variables, const for the discount rate, and an arrow function for the calculations.
+
+Assignment 2:
+Write an ECMAScript function that accepts any number of subject marks using rest parameters, calculates the total and average using forEach(), determines Pass/Fail using an arrow function, and returns the student's result summary.
+
+Assignment 3:
+Create an Employee class with name, department, and salary properties. Add an isEligibleForBonus() method to check if the salary exceeds 50,000. Store multiple employees in an array and display the employees eligible for a bonus using filter().
+
+Assignment 4:
+Develop a Node.js application to read employee details from a file, calculate the net salary after adding a 10% bonus, and write the updated salary report to a new file using the fs module.
+
+Assignment 5:
+Create a custom Node.js module to perform deposit and withdrawal operations. Import the module into another file and display the updated account balance using module.exports and require().
+
+Assignment 6:
+Create a Node.js server for a bank loan portal with routes to display loan schemes, calculate EMI, check loan eligibility, and handle invalid routes using a 404 response.
+
+Assignment 7:
+Read student marks from a JSON file and generate a report showing total, percentage, grade, class topper, subject-wise highest marks, and students who failed in one or more subjects.
+
+Assignment 8:
+Develop an Express.js application for a food delivery system with routes to display restaurants, view menus, place orders, check order status, and handle invalid routes using a 404 error message.
+
+Assignment 9:
+Develop a RESTful API using Node.js and Express.js to manage employee records. Implement CRUD operations (GET, POST, PUT, DELETE) and test all endpoints using Postman.
+
+Assignment 10:
+Develop a React-based Single Page Application (SPA) for a travel booking system with components for Home, Destinations, Packages, Booking Form, and Contact. Display tour packages, package details, and allow users to submit booking requests.
+
+Assignment 11:
+Build a ToDo Application with React and MongoDB.

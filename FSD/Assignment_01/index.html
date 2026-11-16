@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Shopping Bill Calculator</title>
+  </head>
+
+  <body>
+    <h2>Shopping Bill Calculator</h2>
+
+    <label>Product 1 Price: <input type="number" id="p1" value="0" /></label
+    ><br /><br />
+    <label>Product 2 Price: <input type="number" id="p2" value="0" /></label
+    ><br /><br />
+    <label>Product 3 Price: <input type="number" id="p3" value="0" /></label
+    ><br /><br />
+    <label>Product 4 Price: <input type="number" id="p4" value="0" /></label
+    ><br /><br />
+
+    <button onclick="calculateBill()">Calculate Bill</button>
+
+    <pre id="output"></pre>
+
+    <script>
+      const DISCOUNT_RATE = 0.15;
+
+      const calculateBill = () => {
+        let price1 = Number(document.getElementById("p1").value);
+        let price2 = Number(document.getElementById("p2").value);
+        let price3 = Number(document.getElementById("p3").value);
+        let price4 = Number(document.getElementById("p4").value);
+
+        let total = price1 + price2 + price3 + price4;
+        let discount = total > 3000 ? total * DISCOUNT_RATE : 0;
+        let finalAmount = total - discount;
+
+        document.getElementById("output").textContent =
+          `Total Amount: Rs. ${total.toFixed(2)}\n` +
+          `Discount (15% if > 3000): Rs. ${discount.toFixed(2)}\n` +
+          `Final Payable Amount: Rs. ${finalAmount.toFixed(2)}`;
+      };
+    </script>
+  </body>
+</html>

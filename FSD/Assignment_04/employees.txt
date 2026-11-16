@@ -1,0 +1,5 @@
+Amit,IT,50000
+Neha,HR,40000
+Rohan,Finance,60000
+Priya,Sales,35000
+

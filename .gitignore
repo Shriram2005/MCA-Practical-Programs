@@ -2,3 +2,5 @@
 DSA/.vscode/
 *.exe
 *.class
+**node_modules/
+FSD/PRACTICE/

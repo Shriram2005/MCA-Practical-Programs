@@ -1,0 +1,6 @@
+Name | Department | Basic Salary | Bonus (10%) | Net Salary
+------------------------------------------------------------
+Amit | IT | 50000 | 5000 | 55000
+Neha | HR | 40000 | 4000 | 44000
+Rohan | Finance | 60000 | 6000 | 66000
+Priya | Sales | 35000 | 3500 | 38500

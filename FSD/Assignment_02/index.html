@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Result</title>
+</head>
+<body>
+
+    <h1>Student Result</h1>
+
+    <form id="marksForm">
+        <label for="studentName">Student Name:</label>
+        <input type="text" id="studentName" required>
+        <br><br>
+
+        <label for="marks">Enter marks:</label>
+        <input
+            type="text"
+            id="marks"
+            placeholder="Example: 75, 80, 65, 90"
+            required
+        >
+        <br><br>
+
+        <button type="submit">Evaluate Result</button>
+    </form>
+
+    <p id="result"></p>
+
+    <script>
+        const checkResult = (marks) =>
+            marks.every((mark) => mark >= 40) ? "Pass" : "Fail";
+
+        function evaluateMarks(...marks) {
+            let total = 0;
+
+            marks.forEach((mark) => {
+                total += mark;
+            });
+
+            const average = total / marks.length;
+
+            return {
+                marks,
+                total,
+                average: Number(average.toFixed(2)),
+                status: checkResult(marks)
+            };
+        }
+
+        document.getElementById("marksForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const studentName = document.getElementById("studentName").value;
+            const marks = document
+                .getElementById("marks")
+                .value
+                .split(",")
+                .map(Number);
+
+            const result = evaluateMarks(...marks);
+
+            document.getElementById("result").innerHTML = `
+                Student: ${studentName}<br>
+                Marks: ${result.marks.join(", ")}<br>
+                Total: ${result.total}<br>
+                Average: ${result.average}<br>
+                Status: ${result.status}
+            `;
+        });
+    </script>
+
+</body>
+</html>
